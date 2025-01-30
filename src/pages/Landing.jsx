@@ -34,7 +34,7 @@ const LandingPage = () => {
             delay: 2000,
           }),
         ]}
-        className="w-full py-10"
+        className="w-full py-10 pl-32"
       >
         <CarouselContent className="flex gap-5 sm:gap-20 items-center">
           {companies.map(({ name, id, path }) => (
@@ -51,10 +51,10 @@ const LandingPage = () => {
 
 
       {/* banner */}
-      <img src="/banner.jpeg" className="w-full m-10" />
+      <img src="/banner.jpeg" className="w-full m-10 pl-12" />
 
       {/* card */}
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-4 pl-32">
         <Card>
           <CardHeader>
             <CardTitle className="font-bold">For Job Seekers</CardTitle>
@@ -74,7 +74,7 @@ const LandingPage = () => {
       </section>
 
       {/* Accordion */}
-      <Accordion type="multiple" className="w-full pl-11">
+      <Accordion type="multiple" className="w-full pl-32">
         {faqs.map((faq, index) => (
           <AccordionItem key={index} value={`item-${index + 1}`}>
             <AccordionTrigger>{faq.question}</AccordionTrigger>
